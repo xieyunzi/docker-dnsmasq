@@ -1,0 +1,12 @@
+#listen on container interface
+listen-address=0.0.0.0
+interface=eth0
+user=root
+
+#only use these namesservers
+no-resolv
+server=8.8.8.8
+server=8.8.4.4
+
+#static entries
+address=/domain.com/192.168.1.1
