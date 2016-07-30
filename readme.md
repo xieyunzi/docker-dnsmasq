@@ -29,3 +29,17 @@ should got
 
     Name:   domain.com
     Address: 192.168.1.1
+
+Clear system dns cache
+----------------------
+
+google search :P
+
+Clear browser dns cache
+-----------------------
+
+As you probably know Google Chrome has its own internal DNS cache.
+Need to both clear the host cache and flush the socket pools to get Chrome to refresh the DNS cache:
+
+1. Navigate to **[chrome://net-internals/#dns][1]** and click **"Clear Host Cache"**
+2. Navigate to **[chrome://net-internals/#sockets][2]** abd click **"Flush Socket Pools"**
