@@ -1,0 +1,9 @@
+version: '2'
+services:
+  dnsmasq:
+    image: dnsmasq-gui
+    ports:
+      - "53:53"
+      - "12333:8080"
+    volumes:
+      - ./dnsmasq.conf:/etc/dnsmasq.conf
