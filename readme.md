@@ -33,6 +33,8 @@ should got
 Clear system dns cache
 ----------------------
 
+- mac: https://support.apple.com/en-us/HT202516
+
 google search :P
 
 Clear browser dns cache
