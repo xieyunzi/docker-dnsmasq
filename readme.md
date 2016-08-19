@@ -45,3 +45,5 @@ Need to both clear the host cache and flush the socket pools to get Chrome to re
 
 1. Navigate to **[chrome://net-internals/#dns][1]** and click **"Clear Host Cache"**
 2. Navigate to **[chrome://net-internals/#sockets][2]** abd click **"Flush Socket Pools"**
+
+also http://superuser.com/questions/723703/why-is-chromium-bypassing-etc-hosts-and-dnsmasq
