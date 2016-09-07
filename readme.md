@@ -47,3 +47,10 @@ Need to both clear the host cache and flush the socket pools to get Chrome to re
 2. Navigate to **[chrome://net-internals/#sockets][2]** abd click **"Flush Socket Pools"**
 
 also http://superuser.com/questions/723703/why-is-chromium-bypassing-etc-hosts-and-dnsmasq
+
+### Chrome dns cache issues
+
+[Built-in DNS uses the wrong DNS server](https://bugs.chromium.org/p/chromium/issues/detail?id=171346)
+["Internal DNS client enabled" is a problem with VPN or local cache servers](https://bugs.chromium.org/p/chromium/issues/detail?id=472221)
+
+so to fix this problem, i just remove '8.8.8.8' from my DNS list
