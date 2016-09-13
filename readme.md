@@ -1,13 +1,10 @@
 Build dnsmasq-gui
 -----------------
 
-    git clone https://github.com/jpillora/docker-dnsmasq
-    cd docker-dnsmasq
-    docker build -t dnsmasq-gui .
-
-    mkdir -p ~/.config
-    git clone https://github.com/xieyunzi/docker-dnsmasq ~/.config/dnsmasq
-    cd ~/.config/dnsmasq && make
+    git clone https://github.com/xieyunzi/docker-dnsmasq
+    mkdir data && cp dnsmasq.conf.example data/dnsmasq.conf
+    # mkdir data/dnsmasq.d && vim data/dnsmasq.d/dnsmasq.conf
+    docker-compose up -d
 
 Change dns setting for mac (DNS lookup on Mac OSX does not use /etc/resolv.conf)
 --------------------------------------------------------------------------------
